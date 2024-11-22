@@ -20,24 +20,6 @@ public static int sumFirstAndLastDigit(int number)
 ### Implementation
 The method uses a loop to find the first digit of the number and directly accesses the last digit using the modulus operator.
 
-### Example Usage
-```java
-public static int sumFirstAndLastDigit(int number) {
-    if (number < 0) {
-        return -1;
-    }
-    
-    int lastDigit = number % 10;
-    int firstDigit = number;
-    
-    while (firstDigit >= 10) {
-        firstDigit /= 10;
-    }
-    
-    return firstDigit + lastDigit;
-}
-```
-
 ### Example Input/Output
 - `sumFirstAndLastDigit(252)` → should return 4 (2 + 2)
 - `sumFirstAndLastDigit(257)` → should return 9 (2 + 7)
